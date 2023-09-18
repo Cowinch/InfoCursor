@@ -3,19 +3,42 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    color: white;
 }
 
 body{
     min-height: 100dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgb(15, 15, 15);
 }
 
+h1{
+    letter-spacing: -2%;
+    font-size: 64px;
+    margin: 1vh 0;
+}
+
+
 .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#box{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;
     background-color: #2b2b2b;
     padding: 6px 10px;
     border: 1px solid black;
     border-radius: 10px;
+}
+
+.image{
+    height: 80vh;
+    width: 40vh;
+    object-fit: cover;
+    object-position: 100% center;
+    border-radius: 2px;
 }
