@@ -6,6 +6,10 @@
     color: white;
 }
 
+:root{
+    --cursorSize:0px
+}
+
 body{
     min-height: 100dvh;
     background-color: rgb(15, 15, 15);
@@ -36,9 +40,26 @@ h1{
 }
 
 .image{
-    height: 80vh;
-    width: 40vh;
+    transition: 1s;
+    height: 70vh;
+    width: 35vh;
     object-fit: cover;
-    object-position: 100% center;
+    object-position: 50% center;
     border-radius: 2px;
+    cursor: none;
+}
+
+
+#cursor{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--cursorSize);
+    height: var(--cursorSize);
+    border-radius: 50%;
+    background-color: black;
+    opacity: 1;
+    z-index: 10000;
+    pointer-events: none;
 }
