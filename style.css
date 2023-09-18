@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 15, 15);
+}
+
+.container{
+    background-color: #2b2b2b;
+    padding: 6px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
